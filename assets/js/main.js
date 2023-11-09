@@ -10,5 +10,17 @@ console.log(userLastName);
 let userFavoriteColor = prompt('Qual è il tuo colore preferito?');
 console.log(userFavoriteColor);
 
+// Chiedo all'utente un numero
+let userNumber = Number(prompt('Inserisci un numero'));
+console.log(userNumber);
+
+// Chiedo all'utente un secondo numero
+let secondUserNumber = Number(prompt('Inserisci un secondo numero'));
+console.log(userNumber);
+
+// Divido i numeri scelti arrotondando il risultato
+let dividedNumber = userNumber / secondUserNumber;
+console.log(Math.round(dividedNumber));
+
 // Stampo in console la password ottenuta
-console.log(`Ecco la tua password: ${userName}${userLastName}${userFavoriteColor}21`);
+console.log(`Ecco la tua password: ${userName}${userLastName}${userFavoriteColor}${Math.round(dividedNumber)}`);
